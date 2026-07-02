@@ -1,0 +1,151 @@
+/* 1. Paletas de colores y variables */
+:root {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #ffffff;
+    --accent-color: #00ffcc;
+    --danger-color: #ff3333;
+}
+
+/* 2. Reseteo basico*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 3. encabezado y barra de progreso */
+header {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 600%;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+}
+
+/* barra de progreso */
+progress::-webkit-progress-bar {
+    background-color: #333;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+}
+
+/* 4. botones y filtros */
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 202px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button.active, button:hover {
+    background-color: var(--accent-color);
+    color: black;
+}
+
+.danger-btn {
+    background-color: var(--danger-color);
+    margin-top: 30px;
+}
+
+.danger-btn:hover {
+    background-color: #cc0000;
+    color: white;
+}
+
+/* 5. cuadricula magica */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* 6. estilos de los espiritus */
+.spirit-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.spirit-card:hover {
+    transform: scale(1.05);
+}
+
+.spirit-img {
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+    filter: grayscale(100%) opacity(50%) drop-shadow(0 0 5px red);
+    transition: all 0.3s ease;
+}
+
+.spirit-name {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #aaa;
+}
+
+/* estado capturado*/
+.spirit-card.captured .spirit-img {
+    filter: grayscale(0%) opacity(100%) drop-shadow(0 0 10px var(--accent-color));
+}
+
+.spirit-card.captured .spirit-name {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.hidden {
+    display: none !important;
+}
