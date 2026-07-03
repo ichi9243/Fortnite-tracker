@@ -136,12 +136,12 @@ btnReset.addEventListener('click', () => {
     }
 });
 
-// Los filtro (Ocultar mostrar)
+// Los filtros (Ocultar / mostrar)
 const btnAll = document.getElementById('btn-all');
 const btnCaptured = document.getElementById('btn-captured');
 const btnMissing = document.getElementById('btn-missing');
 
-function setActiveBotton(clickedBtn) {
+function setActiveButton(clickedBtn) {
     btnAll.classList.remove('active');
     btnCaptured.classList.remove('active');
     btnMissing.classList.remove('active');
@@ -150,14 +150,14 @@ function setActiveBotton(clickedBtn) {
 
 // Filtro mostrar todos
 btnAll.addEventListener('click', () => {
-    setActiveBotton(btnAll);
+    setActiveButton(btnAll);
     const cards = document.querySelectorAll('.spirit-card');
     cards.forEach(card => card.classList.remove('hidden'));
 });
 
 // Filtro mostrar capturados
 btnCaptured.addEventListener('click', () => {
-    setActiveBotton(btnCaptured);
+    setActiveButton(btnCaptured);
     const cards = document.querySelectorAll('.spirit-card');
     cards.forEach(card => {
         if (card.classList.contains('captured')) {
@@ -170,7 +170,7 @@ btnCaptured.addEventListener('click', () => {
 
 // Filtro mostrar faltantes
 btnMissing.addEventListener('click', () => {
-    setActiveBotton(btnMissing);
+    setActiveButton(btnMissing);
     const cards = document.querySelectorAll('.spirit-card');
     cards.forEach(card => {
         if (card.classList.contains('captured')) {
@@ -180,6 +180,114 @@ btnMissing.addEventListener('click', () => {
         }
     }); 
 });
+
+// ==========================================
+// GENERADOR DE IMAGEN (CANVAS API CON SPRITES)
+// ==========================================
+
+const btnShare = document.getElementById('btn-share');
+const shareContainer = document.getElementById('share-container');
+const sharePreview = document.getElementById('share-preview');
+const btnDownload = document.getElementById('btn-download');
+
+btnShare.addEventListener('click', () => {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    
+    // Hacemos el lienzo más grande para que los sprites se distingan bien
+    canvas.width = 660;
+    canvas.height = 540;
+    
+    // Fondo oscuro y borde neón
+    ctx.fillStyle = '#121212';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.strokeStyle = '#00ffcc';
+    ctx.lineWidth = 6;
+    ctx.strokeRect(0, 0, canvas.width, canvas.height);
+
+    // Títulos principales
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 28px "Segoe UI", sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('FORTNITE SPIRITS TRACKER', canvas.width / 2, 50);
+
+    // Progreso
+    const capturedCount = document.querySelectorAll('.spirit-card.captured').length;
+    const totalCount = spiritsDatabase.length;
+    const percentage = Math.round((capturedCount / totalCount) * 100);
+
+    ctx.fillStyle = '#00ffcc';
+    ctx.font = 'bold 22px "Segoe UI", sans-serif';
+    ctx.fillText(`Progreso: ${capturedCount} / ${totalCount} (${percentage}%)`, canvas.width / 2, 90);
+
+    // Cuadrícula con imágenes reales (Sprites)
+    const cols = 10;
+    const size = 46; // Subimos a 46 píxeles por cuadrito
+    const gap = 12;
+
+    const totalGridWidth = cols * size + (cols - 1) * gap;
+    const startX = (canvas.width - totalGridWidth) / 2;
+    const startY = 130;
+
+    const cards = document.querySelectorAll('.spirit-card');
+
+    cards.forEach((card, index) => {
+        const col = index % cols;
+        const row = Math.floor(index / cols);
+        const x = startX + col * (size + gap);
+        const y = startY + row * (size + gap);
+
+        // Magia: Extraemos el elemento <img> de adentro de la tarjeta del HTML
+        const imgElement = card.querySelector('img');
+
+        if (card.classList.contains('captured')) {
+            // 1. Fondo de la celda
+            ctx.fillStyle = '#1e1e1e';
+            ctx.fillRect(x, y, size, size);
+            
+            // 2. Pintamos el sprite normal a todo color
+            ctx.filter = 'none';
+            ctx.drawImage(imgElement, x, y, size, size);
+
+            // 3. Borde verde neón de éxito
+            ctx.strokeStyle = '#00ffcc';
+            ctx.lineWidth = 2;
+            ctx.strokeRect(x, y, size, size);
+        } else {
+            // 1. Fondo de la celda
+            ctx.fillStyle = '#1e1e1e';
+            ctx.fillRect(x, y, size, size);
+
+            // 2. Activamos el filtro gris en el Canvas y pintamos el sprite fantasma
+            ctx.filter = 'grayscale(10%) opacity(50%)';
+            ctx.drawImage(imgElement, x, y, size, size);
+            
+            // 3. ¡OJO! Reseteamos el filtro para no arruinar el siguiente dibujo
+            ctx.filter = 'none';
+
+            // 4. Borde rojo de advertencia (faltante)
+            ctx.strokeStyle = '#ff3333';
+            ctx.lineWidth = 2;
+            ctx.strokeRect(x, y, size, size);
+        }
+    });
+
+    // Marca de agua en el pie
+    ctx.fillStyle = '#777777';
+    ctx.font = '14px "Segoe UI", sans-serif';
+    ctx.fillText('Checklist interactiva en: ichi9243.github.io/Fortnite-tracker/', canvas.width / 2, 510);
+
+    // Transformar a PNG real y mostrar en pantalla
+    const dataUrl = canvas.toDataURL('image/png');
+    sharePreview.src = dataUrl;
+    btnDownload.href = dataUrl;
+
+    shareContainer.classList.remove('hidden');
+    shareContainer.scrollIntoView({ behavior: 'smooth' });
+});
+
+
 
 // Ejecucion principal
 renderSpirits();
