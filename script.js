@@ -1,66 +1,97 @@
 //Lista de espiritus
 const spiritsDatabase = [
-    { id: 1, name: "Espíritu de Agua", img: "img/agua.png" },
-    { id: 2, name: "Espíritu de Agua Dorado", img: "img/agua-dorado.png" },
-    { id: 3, name: "Espíritu de Agua Galaxy", img: "img/agua-galaxy.png" },
-    { id: 4, name: "Espíritu de Agua Gomita", img: "img/agua-gomita.png" },
-    { id: 5, name: "Espíritu de Almohada", img: "img/almoada.png" },
-    { id: 6, name: "Espíritu de Almohada Dorado", img: "img/almoada-dorado.png" },
-    { id: 7, name: "Espíritu de Almohada Galaxy", img: "img/almoada-galaxy.png" },
-    { id: 8, name: "Espíritu de Almohada Gomita", img: "img/almoada-gomita.png" },
-    { id: 9, name: "Espíritu de Aura", img: "img/aura.png" },
-    { id: 10, name: "Espíritu de Aura Dorado", img: "img/aura-dorado.png" },
-    { id: 11, name: "Espíritu de Aura Galaxy", img: "img/aura-galaxy.png" },
-    { id: 12, name: "Espíritu de Aura Gomita", img: "img/aura-gomita.png" },
-    { id: 13, name: "Espíritu de Bosque", img: "img/bosque.png" },
-    { id: 14, name: "Espíritu de Bosque Dorado", img: "img/bosque-dorado.png" },
-    { id: 15, name: "Espíritu de Bosque Galaxy", img: "img/bosque-galaxy.png" },
-    { id: 16, name: "Espíritu de Bosque Gomita", img: "img/bosque-gomita.png" },
-    { id: 17, name: "Espíritu Boss", img: "img/boss.png" },
-    { id: 18, name: "Espíritu Boss Dorado", img: "img/boss-dorado.png" },
-    { id: 19, name: "Espíritu Boss Galaxy", img: "img/boss-galaxy.png" },
-    { id: 20, name: "Espíritu Boss Gomita", img: "img/boss-gomita.png" },
-    { id: 21, name: "Espíritu de Cacahuate", img: "img/cacahuate.png" },
-    { id: 22, name: "Espíritu Demonio", img: "img/demonio.png" },
-    { id: 23, name: "Espíritu Demonio Dorado", img: "img/demonio-dorado.png" },
-    { id: 24, name: "Espíritu Demonio Galaxy", img: "img/demonio-galaxy.png" },
-    { id: 25, name: "Espíritu Demonio Gomita", img: "img/demonio-gomita.png" },
-    { id: 26, name: "Espíritu Fantasma", img: "img/fantasma.png" },
-    { id: 27, name: "Espíritu Fantasma Dorado", img: "img/fantasma-dorado.png" },
-    { id: 28, name: "Espíritu Fantasma Galaxy", img: "img/fantasma-galaxy.png" },
-    { id: 29, name: "Espíritu Fantasma Gomita", img: "img/fantasma-gomita.png" },
-    { id: 30, name: "Espíritu de Fuego", img: "img/fuego.png" },
-    { id: 31, name: "Espíritu de Fuego Dorado", img: "img/fuego-dorado.png" },
-    { id: 32, name: "Espíritu de Fuego Galaxy", img: "img/fuego-galaxy.png" },
-    { id: 33, name: "Espíritu de Fuego Gomita", img: "img/fuego-gomita.png" },
-    { id: 34, name: "Espíritu Fut", img: "img/fut.png" },
-    { id: 35, name: "Espíritu Fut Dorado", img: "img/fut-dorado.png" },
-    { id: 36, name: "Espíritu Fut Galaxy", img: "img/fut-galaxy.png" },
-    { id: 37, name: "Espíritu Fut Gomita", img: "img/fut-gomita.png" },
-    { id: 38, name: "Espíritu Parka", img: "img/parka.png" },
-    { id: 39, name: "Espíritu Parka Dorado", img: "img/parka-dorado.png" },
-    { id: 40, name: "Espíritu Parka Galaxy", img: "img/parka-galaxy.png" },
-    { id: 41, name: "Espíritu Parka Gomita", img: "img/parka-gomita.png" },
-    { id: 42, name: "Espíritu Pato", img: "img/pato.png" },
-    { id: 43, name: "Espíritu Pato Dorado", img: "img/pato-dorado.png" },
-    { id: 44, name: "Espíritu Pato Galaxy", img: "img/pato-galaxy.png" },
-    { id: 45, name: "Espíritu Pato Gomita", img: "img/pato-gomita.png" },
-    { id: 46, name: "Espíritu Pez", img: "img/pez.png" },
-    { id: 47, name: "Espíritu Pez Dorado", img: "img/pez-dorado.png" },
-    { id: 48, name: "Espíritu Pez Galaxy", img: "img/pez-galaxy.png" },
-    { id: 49, name: "Espíritu Pez Gomita", img: "img/pez-gomita.png" },
-    { id: 50, name: "Espíritu Punk", img: "img/punk.png" },
-    { id: 51, name: "Espíritu Punk Dorado", img: "img/punk-dorado.png" },
-    { id: 52, name: "Espíritu Punk Galaxy", img: "img/punk-galaxy.png" },
-    { id: 53, name: "Espíritu Punk Gomita", img: "img/punk-gomita.png" },
-    { id: 54, name: "Espíritu Rey", img: "img/rey.png" },
-    { id: 55, name: "Espíritu Rey Dorado", img: "img/rey-dorado.png" },
-    { id: 56, name: "Espíritu Rey Galaxy", img: "img/rey-galaxy.png" },
-    { id: 57, name: "Espíritu Rey Gomita", img: "img/rey-gomita.png" },
-    { id: 58, name: "Espíritu Zero", img: "img/zero.png" },
-    { id: 59, name: "Espíritu Zero Dorado", img: "img/zero-dorado.png" },
-    { id: 60, name: "Espíritu Zero Galaxy", img: "img/zero-galaxy.png" },
-    { id: 61, name: "Espíritu Zero Gomita", img: "img/zero-gomita.png" }
+    // 1. Espíritu de agua - agua
+    { id: 1, name: "Espíritu de agua", img: "img/agua.png" },
+    { id: 2, name: "Espíritu de agua Dorado", img: "img/agua-dorado.png" },
+    { id: 3, name: "Espíritu de agua Galaxy", img: "img/agua-galaxy.png" },
+    { id: 4, name: "Espíritu de agua Gomita", img: "img/agua-gomita.png" },
+
+    // 2. Espíritu de tierra - bosque
+    { id: 5, name: "Espíritu de tierra", img: "img/bosque.png" },
+    { id: 6, name: "Espíritu de tierra Dorado", img: "img/bosque-dorado.png" },
+    { id: 7, name: "Espíritu de tierra Galaxy", img: "img/bosque-galaxy.png" },
+    { id: 8, name: "Espíritu de tierra Gomita", img: "img/bosque-gomita.png" },
+
+    // 3. Espíritu de fuego - fuego
+    { id: 9, name: "Espíritu de fuego", img: "img/fuego.png" },
+    { id: 10, name: "Espíritu de fuego Dorado", img: "img/fuego-dorado.png" },
+    { id: 11, name: "Espíritu de fuego Galaxy", img: "img/fuego-galaxy.png" },
+    { id: 12, name: "Espíritu de fuego Gomita", img: "img/fuego-gomita.png" },
+
+    // 4. Espíritu de patito - pato
+    { id: 13, name: "Espíritu de patito", img: "img/pato.png" },
+    { id: 14, name: "Espíritu de patito Dorado", img: "img/pato-dorado.png" },
+    { id: 15, name: "Espíritu de patito Galaxy", img: "img/pato-galaxy.png" },
+    { id: 16, name: "Espíritu de patito Gomita", img: "img/pato-gomita.png" },
+
+    // 5. Espíritu fantasma - fantasma
+    { id: 17, name: "Espíritu fantasma", img: "img/fantasma.png" },
+    { id: 18, name: "Espíritu fantasma Dorado", img: "img/fantasma-dorado.png" },
+    { id: 19, name: "Espíritu fantasma Galaxy", img: "img/fantasma-galaxy.png" },
+    { id: 20, name: "Espíritu fantasma Gomita", img: "img/fantasma-gomita.png" },
+
+    // 6. Espíritu dormilón - almoada
+    { id: 21, name: "Espíritu dormilón", img: "img/almoada.png" },
+    { id: 22, name: "Espíritu dormilón Dorado", img: "img/almoada-dorado.png" },
+    { id: 23, name: "Espíritu dormilón Galaxy", img: "img/almoada-galaxy.png" },
+    { id: 24, name: "Espíritu dormilón Gomita", img: "img/almoada-gomita.png" },
+
+    // 7. Espíritu demoníaco - demonio
+    { id: 25, name: "Espíritu demoníaco", img: "img/demonio.png" },
+    { id: 26, name: "Espíritu demoníaco Dorado", img: "img/demonio-dorado.png" },
+    { id: 27, name: "Espíritu demoníaco Galaxy", img: "img/demonio-galaxy.png" },
+    { id: 28, name: "Espíritu demoníaco Gomita", img: "img/demonio-gomita.png" },
+
+    // 8. Espíritu punk - punk
+    { id: 29, name: "Espíritu punk", img: "img/punk.png" },
+    { id: 30, name: "Espíritu punk Dorado", img: "img/punk-dorado.png" },
+    { id: 31, name: "Espíritu punk Galaxy", img: "img/punk-galaxy.png" },
+    { id: 32, name: "Espíritu punk Gomita", img: "img/punk-gomita.png" },
+
+    // 9. Espíritu monarca - rey
+    { id: 33, name: "Espíritu monarca", img: "img/rey.png" },
+    { id: 34, name: "Espíritu monarca Dorado", img: "img/rey-dorado.png" },
+    { id: 35, name: "Espíritu monarca Galaxy", img: "img/rey-galaxy.png" },
+    { id: 36, name: "Espíritu monarca Gomita", img: "img/rey-gomita.png" },
+
+    // 10. Espíritu punto cero - zero
+    { id: 37, name: "Espíritu punto cero", img: "img/zero.png" },
+    { id: 38, name: "Espíritu punto cero Dorado", img: "img/zero-dorado.png" },
+    { id: 39, name: "Espíritu punto cero Galaxy", img: "img/zero-galaxy.png" },
+    { id: 40, name: "Espíritu punto cero Gomita", img: "img/zero-gomita.png" },
+
+    // 11. Espíritu pez - pez
+    { id: 41, name: "Espíritu pez", img: "img/pez.png" },
+    { id: 42, name: "Espíritu pez Dorado", img: "img/pez-dorado.png" },
+    { id: 43, name: "Espíritu pez Galaxy", img: "img/pez-galaxy.png" },
+    { id: 44, name: "Espíritu pez Gomita", img: "img/pez-gomita.png" },
+
+    // 12. Espíritu goleador - fut
+    { id: 45, name: "Espíritu goleador", img: "img/fut.png" },
+    { id: 46, name: "Espíritu goleador Dorado", img: "img/fut-dorado.png" },
+    { id: 47, name: "Espíritu goleador Galaxy", img: "img/fut-galaxy.png" },
+    { id: 48, name: "Espíritu goleador Gomita", img: "img/fut-gomita.png" },
+
+    // 13. Espíritu de aura - aura
+    { id: 49, name: "Espíritu de aura", img: "img/aura.png" },
+    { id: 50, name: "Espíritu de aura Dorado", img: "img/aura-dorado.png" },
+    { id: 51, name: "Espíritu de aura Galaxy", img: "img/aura-galaxy.png" },
+    { id: 52, name: "Espíritu de aura Gomita", img: "img/aura-gomita.png" },
+
+    // 14. Espíritu jefe - boss
+    { id: 53, name: "Espíritu jefe", img: "img/boss.png" },
+    { id: 54, name: "Espíritu jefe Dorado", img: "img/boss-dorado.png" },
+    { id: 55, name: "Espíritu jefe Galaxy", img: "img/boss-galaxy.png" },
+    { id: 56, name: "Espíritu jefe Gomita", img: "img/boss-gomita.png" },
+
+    // 15. Espíritu siniestro - parka
+    { id: 57, name: "Espíritu siniestro", img: "img/parka.png" },
+    { id: 58, name: "Espíritu siniestro Dorado", img: "img/parka-dorado.png" },
+    { id: 59, name: "Espíritu siniestro Galaxy", img: "img/parka-galaxy.png" },
+    { id: 60, name: "Espíritu siniestro Gomita", img: "img/parka-gomita.png" },
+
+    // 16. Espíritu de cacahuate - cacahuate
+    { id: 61, name: "Espíritu de cacahuate", img: "img/cacahuate.png" }
 ];
 
 // Renderizar la cuadricula
