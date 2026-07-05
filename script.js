@@ -212,9 +212,8 @@ btnMissing.addEventListener('click', () => {
     }); 
 });
 
-// ==========================================
+
 // GENERADOR DE IMAGEN (CANVAS API CON SPRITES)
-// ==========================================
 
 const btnShare = document.getElementById('btn-share');
 const shareContainer = document.getElementById('share-container');
@@ -230,7 +229,11 @@ btnShare.addEventListener('click', () => {
     canvas.height = 540;
     
     // Fondo oscuro y borde neón
-    ctx.fillStyle = '#121212';
+    const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    gradient.addColorStop(0, '#3a3a3a');
+    gradient.addColorStop(1, '#050505');
+    
+    ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.strokeStyle = '#00ffcc';
