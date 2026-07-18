@@ -5,7 +5,7 @@ const spiritsDatabase = [
     { id: 2, name: "Espíritu de agua Dorado", img: "img/agua-dorado.png" },
     { id: 3, name: "Espíritu de agua Galaxy", img: "img/agua-galaxy.png" },
     { id: 4, name: "Espíritu de agua Gomita", img: "img/agua-gomita.png" },
-    { id: 5, name: "Espíritu de agua Holográfico", img: "img/agua-holografico.png" }, // <--- NUEVO
+    { id: 5, name: "Espíritu de agua Holográfico", img: "img/agua-holografico.png" },
 
     // 2. Espíritu de tierra - bosque
     { id: 6, name: "Espíritu de tierra", img: "img/bosque.png" },
@@ -18,85 +18,109 @@ const spiritsDatabase = [
     { id: 11, name: "Espíritu de fuego Dorado", img: "img/fuego-dorado.png" },
     { id: 12, name: "Espíritu de fuego Galaxy", img: "img/fuego-galaxy.png" },
     { id: 13, name: "Espíritu de fuego Gomita", img: "img/fuego-gomita.png" },
-    { id: 14, name: "Espíritu de fuego Holográfico", img: "img/fuego-holografico.png" }, // <--- NUEVO
+    { id: 14, name: "Espíritu de fuego Holográfico", img: "img/fuego-holografico.png" },
 
-    // 4. Espíritu de patito - pato
-    { id: 15, name: "Espíritu de patito", img: "img/pato.png" },
-    { id: 16, name: "Espíritu de patito Dorado", img: "img/pato-dorado.png" },
-    { id: 17, name: "Espíritu de patito Galaxy", img: "img/pato-galaxy.png" },
-    { id: 18, name: "Espíritu de patito Gomita", img: "img/pato-gomita.png" },
+    // 4. Espíritu de aire - aire (NUEVA FAMILIA)
+    { id: 15, name: "Espíritu de aire", img: "img/aire.png" },
+    { id: 16, name: "Espíritu de aire Dorado", img: "img/aire-dorado.png" },
+    { id: 17, name: "Espíritu de aire Galaxy", img: "img/aire-galaxy.png" },
+    { id: 18, name: "Espíritu de aire Gomita", img: "img/aire-gomita.png" },
+    { id: 19, name: "Espíritu de aire Holográfico", img: "img/aire-holografico.png" },
 
-    // 5. Espíritu fantasma - fantasma
-    { id: 19, name: "Espíritu fantasma", img: "img/fantasma.png" },
-    { id: 20, name: "Espíritu fantasma Dorado", img: "img/fantasma-dorado.png" },
-    { id: 21, name: "Espíritu fantasma Galaxy", img: "img/fantasma-galaxy.png" },
-    { id: 22, name: "Espíritu fantasma Gomita", img: "img/fantasma-gomita.png" },
-    { id: 23, name: "Espíritu fantasma Holográfico", img: "img/fantasma-holografico.png" }, // <--- NUEVO
+    // 5. Espíritu de patito - pato
+    { id: 20, name: "Espíritu de patito", img: "img/pato.png" },
+    { id: 21, name: "Espíritu de patito Dorado", img: "img/pato-dorado.png" },
+    { id: 22, name: "Espíritu de patito Galaxy", img: "img/pato-galaxy.png" },
+    { id: 23, name: "Espíritu de patito Gomita", img: "img/pato-gomita.png" },
 
-    // 6. Espíritu dormilón - almoada
-    { id: 24, name: "Espíritu dormilón", img: "img/almoada.png" },
-    { id: 25, name: "Espíritu dormilón Dorado", img: "img/almoada-dorado.png" },
-    { id: 26, name: "Espíritu dormilón Galaxy", img: "img/almoada-galaxy.png" },
-    { id: 27, name: "Espíritu dormilón Gomita", img: "img/almoada-gomita.png" },
+    // 6. Espíritu fantasma - fantasma
+    { id: 24, name: "Espíritu fantasma", img: "img/fantasma.png" },
+    { id: 25, name: "Espíritu fantasma Dorado", img: "img/fantasma-dorado.png" },
+    { id: 26, name: "Espíritu fantasma Galaxy", img: "img/fantasma-galaxy.png" },
+    { id: 27, name: "Espíritu fantasma Gomita", img: "img/fantasma-gomita.png" },
+    { id: 28, name: "Espíritu fantasma Holográfico", img: "img/fantasma-holografico.png" },
 
-    // 7. Espíritu demoníaco - demonio
-    { id: 28, name: "Espíritu demoníaco", img: "img/demonio.png" },
-    { id: 29, name: "Espíritu demoníaco Dorado", img: "img/demonio-dorado.png" },
-    { id: 30, name: "Espíritu demoníaco Galaxy", img: "img/demonio-galaxy.png" },
-    { id: 31, name: "Espíritu demoníaco Gomita", img: "img/demonio-gomita.png" },
+    // 7. Espíritu dormilón - almoada
+    { id: 29, name: "Espíritu dormilón", img: "img/almoada.png" },
+    { id: 30, name: "Espíritu dormilón Dorado", img: "img/almoada-dorado.png" },
+    { id: 31, name: "Espíritu dormilón Galaxy", img: "img/almoada-galaxy.png" },
+    { id: 32, name: "Espíritu dormilón Gomita", img: "img/almoada-gomita.png" },
 
-    // 8. Espíritu punk - punk
-    { id: 32, name: "Espíritu punk", img: "img/punk.png" },
-    { id: 33, name: "Espíritu punk Dorado", img: "img/punk-dorado.png" },
-    { id: 34, name: "Espíritu punk Galaxy", img: "img/punk-galaxy.png" },
-    { id: 35, name: "Espíritu punk Gomita", img: "img/punk-gomita.png" },
+    // 8. Espíritu demoníaco - demonio
+    { id: 33, name: "Espíritu demoníaco", img: "img/demonio.png" },
+    { id: 34, name: "Espíritu demoníaco Dorado", img: "img/demonio-dorado.png" },
+    { id: 35, name: "Espíritu demoníaco Galaxy", img: "img/demonio-galaxy.png" },
+    { id: 36, name: "Espíritu demoníaco Gomita", img: "img/demonio-gomita.png" },
 
-    // 9. Espíritu monarca - rey
-    { id: 36, name: "Espíritu monarca", img: "img/rey.png" },
-    { id: 37, name: "Espíritu monarca Dorado", img: "img/rey-dorado.png" },
-    { id: 38, name: "Espíritu monarca Galaxy", img: "img/rey-galaxy.png" },
-    { id: 39, name: "Espíritu monarca Gomita", img: "img/rey-gomita.png" },
-    { id: 40, name: "Espíritu monarca Holográfico", img: "img/rey-holografico.png" }, // <--- NUEVO
+    // 9. Espíritu punk - punk
+    { id: 37, name: "Espíritu punk", img: "img/punk.png" },
+    { id: 38, name: "Espíritu punk Dorado", img: "img/punk-dorado.png" },
+    { id: 39, name: "Espíritu punk Galaxy", img: "img/punk-galaxy.png" },
+    { id: 40, name: "Espíritu punk Gomita", img: "img/punk-gomita.png" },
 
-    // 10. Espíritu punto cero - zero
-    { id: 41, name: "Espíritu punto cero", img: "img/zero.png" },
-    { id: 42, name: "Espíritu punto cero Dorado", img: "img/zero-dorado.png" },
-    { id: 43, name: "Espíritu punto cero Galaxy", img: "img/zero-galaxy.png" },
-    { id: 44, name: "Espíritu punto cero Gomita", img: "img/zero-gomita.png" },
+    // 10. Espíritu monarca - rey
+    { id: 41, name: "Espíritu monarca", img: "img/rey.png" },
+    { id: 42, name: "Espíritu monarca Dorado", img: "img/rey-dorado.png" },
+    { id: 43, name: "Espíritu monarca Galaxy", img: "img/rey-galaxy.png" },
+    { id: 44, name: "Espíritu monarca Gomita", img: "img/rey-gomita.png" },
+    { id: 45, name: "Espíritu monarca Holográfico", img: "img/rey-holografico.png" },
 
-    // 11. Espíritu pez - pez
-    { id: 45, name: "Espíritu pez", img: "img/pez.png" },
-    { id: 46, name: "Espíritu pez Dorado", img: "img/pez-dorado.png" },
-    { id: 47, name: "Espíritu pez Galaxy", img: "img/pez-galaxy.png" },
-    { id: 48, name: "Espíritu pez Gomita", img: "img/pez-gomita.png" },
+    // 11. Espíritu punto cero - zero
+    { id: 46, name: "Espíritu punto cero", img: "img/zero.png" },
+    { id: 47, name: "Espíritu punto cero Dorado", img: "img/zero-dorado.png" },
+    { id: 48, name: "Espíritu punto cero Galaxy", img: "img/zero-galaxy.png" },
+    { id: 49, name: "Espíritu punto cero Gomita", img: "img/zero-gomita.png" },
 
-    // 12. Espíritu goleador - fut
-    { id: 49, name: "Espíritu goleador", img: "img/fut.png" },
-    { id: 50, name: "Espíritu goleador Dorado", img: "img/fut-dorado.png" },
-    { id: 51, name: "Espíritu goleador Galaxy", img: "img/fut-galaxy.png" },
-    { id: 52, name: "Espíritu goleador Gomita", img: "img/fut-gomita.png" },
-    { id: 53, name: "Espíritu goleador Holográfico", img: "img/fut-holografico.png" }, // <--- NUEVO
+    // 12. Espíritu pez - pez
+    { id: 50, name: "Espíritu pez", img: "img/pez.png" },
+    { id: 51, name: "Espíritu pez Dorado", img: "img/pez-dorado.png" },
+    { id: 52, name: "Espíritu pez Galaxy", img: "img/pez-galaxy.png" },
+    { id: 53, name: "Espíritu pez Gomita", img: "img/pez-gomita.png" },
 
-    // 13. Espíritu de aura - aura
-    { id: 54, name: "Espíritu de aura", img: "img/aura.png" },
-    { id: 55, name: "Espíritu de aura Dorado", img: "img/aura-dorado.png" },
-    { id: 56, name: "Espíritu de aura Galaxy", img: "img/aura-galaxy.png" },
-    { id: 57, name: "Espíritu de aura Gomita", img: "img/aura-gomita.png" },
+    // 13. Espíritu goleador - fut
+    { id: 54, name: "Espíritu goleador", img: "img/fut.png" },
+    { id: 55, name: "Espíritu goleador Dorado", img: "img/fut-dorado.png" },
+    { id: 56, name: "Espíritu goleador Galaxy", img: "img/fut-galaxy.png" },
+    { id: 57, name: "Espíritu goleador Gomita", img: "img/fut-gomita.png" },
+    { id: 58, name: "Espíritu goleador Holográfico", img: "img/fut-holografico.png" },
 
-    // 14. Espíritu jefe - boss
-    { id: 58, name: "Espíritu jefe", img: "img/boss.png" },
-    { id: 59, name: "Espíritu jefe Dorado", img: "img/boss-dorado.png" },
-    { id: 60, name: "Espíritu jefe Galaxy", img: "img/boss-galaxy.png" },
-    { id: 61, name: "Espíritu jefe Gomita", img: "img/boss-gomita.png" },
+    // 14. Espíritu de aura - aura
+    { id: 59, name: "Espíritu de aura", img: "img/aura.png" },
+    { id: 60, name: "Espíritu de aura Dorado", img: "img/aura-dorado.png" },
+    { id: 61, name: "Espíritu de aura Galaxy", img: "img/aura-galaxy.png" },
+    { id: 62, name: "Espíritu de aura Gomita", img: "img/aura-gomita.png" },
 
-    // 15. Espíritu siniestro - parka
-    { id: 62, name: "Espíritu siniestro", img: "img/parka.png" },
-    { id: 63, name: "Espíritu siniestro Dorado", img: "img/parka-dorado.png" },
-    { id: 64, name: "Espíritu siniestro Galaxy", img: "img/parka-galaxy.png" },
-    { id: 65, name: "Espíritu siniestro Gomita", img: "img/parka-gomita.png" },
+    // 15. Espíritu jefe - boss
+    { id: 63, name: "Espíritu jefe", img: "img/boss.png" },
+    { id: 64, name: "Espíritu jefe Dorado", img: "img/boss-dorado.png" },
+    { id: 65, name: "Espíritu jefe Galaxy", img: "img/boss-galaxy.png" },
+    { id: 66, name: "Espíritu jefe Gomita", img: "img/boss-gomita.png" },
 
-    // 16. Espíritu de cacahuate - cacahuate
-    { id: 66, name: "Espíritu de cacahuate", img: "img/cacahuate.png" }
+    // 16. Espíritu siniestro - parka
+    { id: 67, name: "Espíritu siniestro", img: "img/parka.png" },
+    { id: 68, name: "Espíritu siniestro Dorado", img: "img/parka-dorado.png" },
+    { id: 69, name: "Espíritu siniestro Galaxy", img: "img/parka-galaxy.png" },
+    { id: 70, name: "Espíritu siniestro Gomita", img: "img/parka-gomita.png" },
+
+    // 17. Espíritu Batman - Batman (NUEVA FAMILIA)
+    { id: 71, name: "Espíritu Batman", img: "img/Batman.png" },
+    { id: 72, name: "Espíritu Batman Dorado", img: "img/Batman-dorado.png" },
+    { id: 73, name: "Espíritu Batman Galaxy", img: "img/Batman-galaxy.png" },
+    { id: 74, name: "Espíritu Batman Gomita", img: "img/Batman-gomita.png" },
+    { id: 75, name: "Espíritu Batman Holográfico", img: "img/Batman-holografico.png" },
+    { id: 76, name: "Espíritu Batman Punto Cero", img: "img/Batman-punto-cero.png" },
+
+    // 18. Espíritu Seven - seven (NUEVA FAMILIA)
+    { id: 77, name: "Espíritu Seven", img: "img/seven.png" },
+    { id: 78, name: "Espíritu Seven Dorado", img: "img/seven-dorado.png" },
+    { id: 79, name: "Espíritu Seven Galaxy", img: "img/seven-galaxy.png" },
+    { id: 80, name: "Espíritu Seven Gomita", img: "img/seven-gomita.png" },
+    { id: 81, name: "Espíritu Seven Holográfico", img: "img/seven-holografico.png" },
+
+    // 19. Solitarios / Sin familia (AL FINAL)
+    { id: 82, name: "Espíritu de cacahuate", img: "img/cacahuate.png" },
+    { id: 83, name: "Espíritu de pollo", img: "img/pollo.png" }, // <--- NUEVO
+    { id: 84, name: "Espíritu Vini Jr.", img: "img/vini-jr.png" }   // <--- NUEVO
 ];
 
 // Renderizar la cuadricula
@@ -229,9 +253,9 @@ btnShare.addEventListener('click', () => {
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     
-    // Hacemos el lienzo más grande para que los sprites se distingan bien
-    canvas.width = 660;
-    canvas.height = 710;
+    // tamaño del lienzo
+    canvas.width = 1300;
+    canvas.height = 1200;
     
     // Fondo oscuro y borde neón
     const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
@@ -247,9 +271,9 @@ btnShare.addEventListener('click', () => {
 
     // Títulos principales
     ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 28px "Segoe UI", sans-serif';
+    ctx.font = 'bold 44px "Segoe UI", sans-serif';
     ctx.textAlign = 'center';
-    ctx.fillText('FORTNITE SPIRITS TRACKER', canvas.width / 2, 50);
+    ctx.fillText('FORTNITE SPIRITS TRACKER', canvas.width / 2, 60);
 
     // Progreso
     const capturedCount = document.querySelectorAll('.spirit-card.captured').length;
@@ -257,17 +281,17 @@ btnShare.addEventListener('click', () => {
     const percentage = Math.round((capturedCount / totalCount) * 100);
 
     ctx.fillStyle = '#00ffcc';
-    ctx.font = 'bold 22px "Segoe UI", sans-serif';
-    ctx.fillText(`Progreso: ${capturedCount} / ${totalCount} (${percentage}%)`, canvas.width / 2, 90);
+    ctx.font = 'bold 32px "Segoe UI", sans-serif';
+    ctx.fillText(`Progreso: ${capturedCount} / ${totalCount} (${percentage}%)`, canvas.width / 2, 115);
 
     // Cuadrícula con imágenes reales (Sprites)
     const cols = 10;
-    const size = 46; // Subimos a 46 píxeles por cuadrito
-    const gap = 12;
+    const size = 92; 
+    const gap = 16;
 
     const totalGridWidth = cols * size + (cols - 1) * gap;
     const startX = (canvas.width - totalGridWidth) / 2;
-    const startY = 130;
+    const startY = 160;
 
     const cards = document.querySelectorAll('.spirit-card');
 
@@ -277,7 +301,7 @@ btnShare.addEventListener('click', () => {
         const x = startX + col * (size + gap);
         const y = startY + row * (size + gap);
 
-        // Magia: Extraemos el elemento <img> de adentro de la tarjeta del HTML
+        // Extraemos el elemento <img> de adentro de la tarjeta del HTML
         const imgElement = card.querySelector('img');
 
         if (card.classList.contains('captured')) {
@@ -302,7 +326,7 @@ btnShare.addEventListener('click', () => {
             ctx.filter = 'grayscale(10%) opacity(50%)';
             ctx.drawImage(imgElement, x, y, size, size);
             
-            // 3. ¡OJO! Reseteamos el filtro para no arruinar el siguiente dibujo
+            // 3. Reseteamos el filtro para no arruinar el siguiente dibujo
             ctx.filter = 'none';
 
             // 4. Borde rojo de advertencia (faltante)
@@ -316,28 +340,28 @@ btnShare.addEventListener('click', () => {
 
     // Marca de agua en el pie +QR
     ctx.fillStyle = '#aaaaaa';
-    ctx.font = '16px "Segoe UI", sans-serif';
+    ctx.font = '24px "Segoe UI", sans-serif';
     ctx.textAlign = 'left';
-    ctx.fillText('📱 Escanea el código para crear tu', 40, 565);
-    ctx.fillText('propia checklist interactiva:', 40, 588);
+    ctx.fillText('📱 Escanea el código para crear tu', 560, 1060);
+    ctx.fillText('propia checklist interactiva:', 570, 1090);
     
     ctx.fillStyle = '#00ffcc';
-    ctx.font = 'bold 15px "Segoe UI", sans-serif';
-    ctx.fillText('ichi9243.github.io/Fortnite-tracker/', 40, 610);
+    ctx.font = 'bold 25px "Segoe UI", sans-serif';
+    ctx.fillText('ichi9243.github.io/Fortnite-tracker/', 570, 1130);
 
     // 2. Generamos el QR en la memoria usando la librería QRious
     const qr = new QRious({
         value: 'https://ichi9243.github.io/Fortnite-tracker/',
-        size: 80,          
+        size: 130,          
         background: 'white', 
         foreground: 'black',
         level: 'M'         
     });
 
     ctx.fillStyle = '#ffffff';
-    ctx.fillRect(535, 535, 88, 88); 
+    ctx.fillRect(1060, 1020, 140, 140); 
     
-    ctx.drawImage(qr.canvas, 539, 539);
+    ctx.drawImage(qr.canvas, 1065, 1025);
 
     // Transformar a PNG real y mostrar en pantalla
     const dataUrl = canvas.toDataURL('image/png');
