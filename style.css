@@ -115,6 +115,7 @@ button.active, button:hover {
     align-items: center;
     cursor: pointer;
     transition: transform 0.2s;
+    position: relative;
 }
 
 .spirit-card:hover {
@@ -139,6 +140,10 @@ button.active, button:hover {
 /* estado capturado*/
 .spirit-card.captured .spirit-img {
     filter: grayscale(0%) opacity(100%) drop-shadow(0 0 10px var(--accent-color));
+}
+
+.spirit-card.mastered .spirit-img {
+    filter: grayscale(0%) opacity(100%) drop-shadow(0 0 10px #ffd700);
 }
 
 .spirit-card.captured .spirit-name {
@@ -196,4 +201,41 @@ button.active, button:hover {
 .download-btn:hover {
     background-color: #00ccaa;
     transform: scale(1.05);
+}
+
+/* ESTILOS DE DOMINACION*/
+
+/*La corona esta oculta por defecto*/
+.spirit-crown {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 34px;
+    height: 34px;
+    z-index: 10;
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.8));
+    transition: transform 0.2s;
+}
+
+/*se muestra la corona y el borde dorado*/
+.spirit-card.mastered {
+    border-color: #ffd700;
+    box-shadow: 0 0 18px rgba(255, 215, 0, 0.4);
+    background: linear-gradient(145deg, #1f1a05, #121212);
+}
+
+.spirit-card.mastered .spirit-crown {
+    display: block;
+    animation: crownPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/*Animacion*/
+@keyframes crownPop {
+    0% { transform: scale(0) rotate(-20deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+.spirit-card.mastered:hover .spirit-name {
+    color: #ffd700;
 }

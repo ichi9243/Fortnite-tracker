@@ -1,4 +1,6 @@
-//Lista de espiritus
+// ==========================================
+// LISTA DE ESPÍRITUS (91 EN TOTAL)
+// ==========================================
 const spiritsDatabase = [
     // 1. Espíritu de agua - agua
     { id: 1, name: "Espíritu de agua", img: "img/agua.png" },
@@ -12,7 +14,7 @@ const spiritsDatabase = [
     { id: 7, name: "Espíritu de tierra Dorado", img: "img/bosque-dorado.png" },
     { id: 8, name: "Espíritu de tierra Galaxy", img: "img/bosque-galaxy.png" },
     { id: 9, name: "Espíritu de tierra Gomita", img: "img/bosque-gomita.png" },
-    { id: 10, name: "Espíritu de tierra Cubo", img: "img/bosque-cubo.png" }, 
+    { id: 10, name: "Espíritu de tierra Cubo", img: "img/bosque-cubo.png" },
 
     // 3. Espíritu de fuego - fuego
     { id: 11, name: "Espíritu de fuego", img: "img/fuego.png" },
@@ -20,7 +22,7 @@ const spiritsDatabase = [
     { id: 13, name: "Espíritu de fuego Galaxy", img: "img/fuego-galaxy.png" },
     { id: 14, name: "Espíritu de fuego Gomita", img: "img/fuego-gomita.png" },
     { id: 15, name: "Espíritu de fuego Holográfico", img: "img/fuego-holografico.png" },
-    { id: 16, name: "Espíritu de fuego Cubo", img: "img/fuego-cubo.png" }, 
+    { id: 16, name: "Espíritu de fuego Cubo", img: "img/fuego-cubo.png" },
 
     // 4. Espíritu de aire - aire
     { id: 17, name: "Espíritu de aire", img: "img/aire.png" },
@@ -47,7 +49,7 @@ const spiritsDatabase = [
     { id: 32, name: "Espíritu dormilón Dorado", img: "img/almoada-dorado.png" },
     { id: 33, name: "Espíritu dormilón Galaxy", img: "img/almoada-galaxy.png" },
     { id: 34, name: "Espíritu dormilón Gomita", img: "img/almoada-gomita.png" },
-    { id: 35, name: "Espíritu dormilón Cubo", img: "img/almoada-cubo.png" }, 
+    { id: 35, name: "Espíritu dormilón Cubo", img: "img/almoada-cubo.png" },
 
     // 8. Espíritu demoníaco - demonio
     { id: 36, name: "Espíritu demoníaco", img: "img/demonio.png" },
@@ -60,7 +62,7 @@ const spiritsDatabase = [
     { id: 41, name: "Espíritu punk Dorado", img: "img/punk-dorado.png" },
     { id: 42, name: "Espíritu punk Galaxy", img: "img/punk-galaxy.png" },
     { id: 43, name: "Espíritu punk Gomita", img: "img/punk-gomita.png" },
-    { id: 44, name: "Espíritu punk Cubo", img: "img/punk-cubo.png" }, 
+    { id: 44, name: "Espíritu punk Cubo", img: "img/punk-cubo.png" },
 
     // 10. Espíritu monarca - rey
     { id: 45, name: "Espíritu monarca", img: "img/rey.png" },
@@ -80,7 +82,7 @@ const spiritsDatabase = [
     { id: 55, name: "Espíritu pez Dorado", img: "img/pez-dorado.png" },
     { id: 56, name: "Espíritu pez Galaxy", img: "img/pez-galaxy.png" },
     { id: 57, name: "Espíritu pez Gomita", img: "img/pez-gomita.png" },
-    { id: 58, name: "Espíritu pez Cubo", img: "img/pez-cubo.png" }, 
+    { id: 58, name: "Espíritu pez Cubo", img: "img/pez-cubo.png" },
 
     // 13. Espíritu goleador - fut
     { id: 59, name: "Espíritu goleador", img: "img/fut.png" },
@@ -94,14 +96,14 @@ const spiritsDatabase = [
     { id: 65, name: "Espíritu de aura Dorado", img: "img/aura-dorado.png" },
     { id: 66, name: "Espíritu de aura Galaxy", img: "img/aura-galaxy.png" },
     { id: 67, name: "Espíritu de aura Gomita", img: "img/aura-gomita.png" },
-    { id: 68, name: "Espíritu de aura Cubo", img: "img/aura-cubo.png" }, 
+    { id: 68, name: "Espíritu de aura Cubo", img: "img/aura-cubo.png" },
 
     // 15. Espíritu jefe - boss
     { id: 69, name: "Espíritu jefe", img: "img/boss.png" },
     { id: 70, name: "Espíritu jefe Dorado", img: "img/boss-dorado.png" },
     { id: 71, name: "Espíritu jefe Galaxy", img: "img/boss-galaxy.png" },
     { id: 72, name: "Espíritu jefe Gomita", img: "img/boss-gomita.png" },
-    { id: 73, name: "Espíritu jefe Cubo", img: "img/boss-cubo.png" }, 
+    { id: 73, name: "Espíritu jefe Cubo", img: "img/boss-cubo.png" },
 
     // 16. Espíritu siniestro - parka
     { id: 74, name: "Espíritu siniestro", img: "img/parka.png" },
@@ -115,7 +117,7 @@ const spiritsDatabase = [
     { id: 80, name: "Espíritu Batman Galaxy", img: "img/Batman-galaxy.png" },
     { id: 81, name: "Espíritu Batman Gomita", img: "img/Batman-gomita.png" },
     { id: 82, name: "Espíritu Batman Holográfico", img: "img/Batman-holografico.png" },
-    { id: 83, name: "Espíritu Batman cubo", img: "img/Batman-punto-cero.png" },
+    { id: 83, name: "Espíritu Batman Punto Cero", img: "img/Batman-punto-cero.png" },
 
     // 18. Espíritu Seven - seven
     { id: 84, name: "Espíritu Seven", img: "img/seven.png" },
@@ -130,127 +132,173 @@ const spiritsDatabase = [
     { id: 91, name: "Espíritu Vini Jr.", img: "img/vini-jr.png" }
 ];
 
-// Renderizar la cuadricula
+
+// ==========================================
+// RENDERIZADO DE LA CUADRÍCULA
+// ==========================================
 const gridContainer = document.getElementById('spirits-grid');
+
 function renderSpirits() {
     gridContainer.innerHTML = '';
     spiritsDatabase.forEach(spirit => {
         const card = document.createElement('div');
         card.classList.add('spirit-card');
         card.dataset.id = spirit.id;
+        
         card.innerHTML = `
-        <img src="${spirit.img}" alt="${spirit.name}" class="spirit-img">
-        <span class="spirit-name">${spirit.name}</span>
+            <img src="img/corona.png" alt="Dominado" class="spirit-crown">
+            <img src="${spirit.img}" alt="${spirit.name}" class="spirit-img">
+            <span class="spirit-name">${spirit.name}</span>
         `;
-
         gridContainer.appendChild(card);
     });
 }
 
-// Interacion y logica (Captuturar espiritus)
+
+// ==========================================
+// INTERACCIÓN Y LÓGICA (MÁQUINA DE 3 ESTADOS)
+// ==========================================
 const progressText = document.getElementById('progress-text');
 const progressBar = document.getElementById('progress-bar');
 const totalSpirits = spiritsDatabase.length;
 
-function updateProgress(){
-    const capturedCount = document.querySelectorAll('.spirit-card.captured').length;
-    progressText.innerText = `Capturados: ${capturedCount} / ${totalSpirits}`;
+function updateProgress() {
+    const capturedCount = document.querySelectorAll('.spirit-card.captured, .spirit-card.mastered').length;
+    const masteredCount = document.querySelectorAll('.spirit-card.mastered').length;
+    const percentage = Math.round((capturedCount / totalSpirits) * 100);
+    
+    progressText.innerText = `Capturados: ${capturedCount}/${totalSpirits} (${percentage}%) | Dominados: ${masteredCount} 👑`;
     progressBar.value = capturedCount;
     progressBar.max = totalSpirits;
 }
 
-function setupClickEvents(){
+function setupClickEvents() {
     const cards = document.querySelectorAll('.spirit-card');
     cards.forEach(card => {
         card.addEventListener('click', () => {
-            card.classList.toggle('captured');
+            if (!card.classList.contains('captured') && !card.classList.contains('mastered')) {
+                card.classList.add('captured');
+            } else if (card.classList.contains('captured')) {
+                card.classList.remove('captured');
+                card.classList.add('mastered');
+            } else if (card.classList.contains('mastered')) {
+                card.classList.remove('mastered');
+            }
+            
             updateProgress();
             saveProgress();
+            applyCurrentFilter(); 
         });
     });
 }
 
-// Memoria a corto plazo (LOCALSTORAGE) 
+
+// ==========================================
+// MEMORIA LOCAL (LOCALSTORAGE DUAL)
+// ==========================================
 const btnReset = document.getElementById('btn-reset');
+
 function saveProgress() {
     const capturedCards = document.querySelectorAll('.spirit-card.captured');
+    const masteredCards = document.querySelectorAll('.spirit-card.mastered');
+    
     const capturedIds = Array.from(capturedCards).map(card => card.dataset.id);
-    localStorage.setItem('fortniteSpirits', JSON.stringify(capturedIds));
+    const masteredIds = Array.from(masteredCards).map(card => card.dataset.id);
+    
+    localStorage.setItem('fortniteCaptured', JSON.stringify(capturedIds));
+    localStorage.setItem('fortniteMastered', JSON.stringify(masteredIds));
 }
 
 function loadProgress() {
-    const saveData = localStorage.getItem('fortniteSpirits');
-    if (saveData) {
-        const capturedIds = JSON.parse(saveData);
-        const cards = document.querySelectorAll('.spirit-card');
-        cards.forEach(card => {
-            if (capturedIds.includes(card.dataset.id)) {
-                card.classList.add('captured');
-            }
-        });
-    }
+    const saveCaptured = localStorage.getItem('fortniteCaptured');
+    const saveMastered = localStorage.getItem('fortniteMastered');
+    const oldSave = localStorage.getItem('fortniteSpirits');
+    
+    let capturedIds = saveCaptured ? JSON.parse(saveCaptured) : (oldSave ? JSON.parse(oldSave) : []);
+    let masteredIds = saveMastered ? JSON.parse(saveMastered) : [];
+    
+    const cards = document.querySelectorAll('.spirit-card');
+    cards.forEach(card => {
+        if (masteredIds.includes(card.dataset.id)) {
+            card.classList.add('mastered');
+        } else if (capturedIds.includes(card.dataset.id)) {
+            card.classList.add('captured');
+        }
+    });
 }
 
-// El boton rojo (Limpiar progreso)
 btnReset.addEventListener('click', () => {
-    if (confirm("¿Estas seguro de que quieres borrar todo tu progreso? No hay marcha atras.")) {
+    if (confirm("¿Estás seguro de que quieres borrar todo tu progreso y perder tus coronas? No hay marcha atrás.")) {
+        localStorage.removeItem('fortniteCaptured');
+        localStorage.removeItem('fortniteMastered');
         localStorage.removeItem('fortniteSpirits');
+        
         document.querySelectorAll('.spirit-card').forEach(card => {
-            card.classList.remove('captured');
+            card.classList.remove('captured', 'mastered');
         });
-
         updateProgress();
     }
 });
 
-// Los filtros (Ocultar / mostrar)
+
+// ==========================================
+// SISTEMA DE 5 FILTROS AVANZADOS
+// ==========================================
 const btnAll = document.getElementById('btn-all');
 const btnCaptured = document.getElementById('btn-captured');
 const btnMissing = document.getElementById('btn-missing');
+const btnMastered = document.getElementById('btn-mastered');
+const btnUnmastered = document.getElementById('btn-unmastered');
 
-function setActiveButton(clickedBtn) {
-    btnAll.classList.remove('active');
-    btnCaptured.classList.remove('active');
-    btnMissing.classList.remove('active');
+let currentFilter = 'all';
+
+function setActiveButton(clickedBtn, filterType) {
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
     clickedBtn.classList.add('active');
+    currentFilter = filterType;
+    applyCurrentFilter();
 }
 
-// Filtro mostrar todos
-btnAll.addEventListener('click', () => {
-    setActiveButton(btnAll);
-    const cards = document.querySelectorAll('.spirit-card');
-    cards.forEach(card => card.classList.remove('hidden'));
-});
-
-// Filtro mostrar capturados
-btnCaptured.addEventListener('click', () => {
-    setActiveButton(btnCaptured);
+function applyCurrentFilter() {
     const cards = document.querySelectorAll('.spirit-card');
     cards.forEach(card => {
-        if (card.classList.contains('captured')) {
-            card.classList.remove('hidden');
-        } else {
-            card.classList.add('hidden');
+        const isCaptured = card.classList.contains('captured');
+        const isMastered = card.classList.contains('mastered');
+        
+        switch(currentFilter) {
+            case 'all':
+                card.classList.remove('hidden');
+                break;
+            case 'captured':
+                if (isCaptured || isMastered) card.classList.remove('hidden');
+                else card.classList.add('hidden');
+                break;
+            case 'missing':
+                if (!isCaptured && !isMastered) card.classList.remove('hidden');
+                else card.classList.add('hidden');
+                break;
+            case 'mastered':
+                if (isMastered) card.classList.remove('hidden');
+                else card.classList.add('hidden');
+                break;
+            case 'unmastered':
+                if (isCaptured && !isMastered) card.classList.remove('hidden');
+                else card.classList.add('hidden');
+                break;
         }
     });
-});
+}
 
-// Filtro mostrar faltantes
-btnMissing.addEventListener('click', () => {
-    setActiveButton(btnMissing);
-    const cards = document.querySelectorAll('.spirit-card');
-    cards.forEach(card => {
-        if (card.classList.contains('captured')) {
-            card.classList.add('hidden');
-        } else {
-            card.classList.remove('hidden');
-        }
-    }); 
-});
+btnAll.addEventListener('click', () => setActiveButton(btnAll, 'all'));
+btnCaptured.addEventListener('click', () => setActiveButton(btnCaptured, 'captured'));
+btnMissing.addEventListener('click', () => setActiveButton(btnMissing, 'missing'));
+btnMastered.addEventListener('click', () => setActiveButton(btnMastered, 'mastered'));
+btnUnmastered.addEventListener('click', () => setActiveButton(btnUnmastered, 'unmastered'));
 
 
-// GENERADOR DE IMAGEN (CANVAS API CON SPRITES)
-
+// ==========================================
+// GENERADOR DE IMAGEN HD (CANVAS API CON CORONAS)
+// ==========================================
 const btnShare = document.getElementById('btn-share');
 const shareContainer = document.getElementById('share-container');
 const sharePreview = document.getElementById('share-preview');
@@ -260,15 +308,12 @@ btnShare.addEventListener('click', () => {
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     
-    // tamaño del lienzo
     canvas.width = 1300;
     canvas.height = 1350;
     
-    // Fondo oscuro y borde neón
     const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
     gradient.addColorStop(0, '#3a3a3a');
     gradient.addColorStop(1, '#050505');
-    
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -276,26 +321,25 @@ btnShare.addEventListener('click', () => {
     ctx.lineWidth = 6;
     ctx.strokeRect(0, 0, canvas.width, canvas.height);
 
-    // Títulos principales
+    // Títulos
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 44px "Segoe UI", sans-serif';
     ctx.textAlign = 'center';
-    ctx.fillText('FORTNITE SPIRITS TRACKER', canvas.width / 2, 60);
+    ctx.fillText('FORTNITE SPIRITS TRACKER v2.0', canvas.width / 2, 60);
 
     // Progreso
-    const capturedCount = document.querySelectorAll('.spirit-card.captured').length;
-    const totalCount = spiritsDatabase.length;
-    const percentage = Math.round((capturedCount / totalCount) * 100);
+    const capturedCount = document.querySelectorAll('.spirit-card.captured, .spirit-card.mastered').length;
+    const masteredCount = document.querySelectorAll('.spirit-card.mastered').length;
+    const percentage = Math.round((capturedCount / totalSpirits) * 100);
 
     ctx.fillStyle = '#00ffcc';
     ctx.font = 'bold 32px "Segoe UI", sans-serif';
-    ctx.fillText(`Progreso: ${capturedCount} / ${totalCount} (${percentage}%)`, canvas.width / 2, 115);
+    ctx.fillText(`Capturados: ${capturedCount}/${totalSpirits} (${percentage}%) | Dominados: ${masteredCount} 👑`, canvas.width / 2, 115);
 
-    // Cuadrícula con imágenes reales (Sprites)
+    // Cuadrícula
     const cols = 10;
     const size = 92; 
     const gap = 16;
-
     const totalGridWidth = cols * size + (cols - 1) * gap;
     const startX = (canvas.width - totalGridWidth) / 2;
     const startY = 160;
@@ -308,44 +352,51 @@ btnShare.addEventListener('click', () => {
         const x = startX + col * (size + gap);
         const y = startY + row * (size + gap);
 
-        // Extraemos el elemento <img> de adentro de la tarjeta del HTML
-        const imgElement = card.querySelector('img');
+        const imgElement = card.querySelector('.spirit-img');
+        const crownElement = card.querySelector('.spirit-crown');
 
-        if (card.classList.contains('captured')) {
-            // 1. Fondo de la celda
-            ctx.fillStyle = '#1e1e1e';
+        if (card.classList.contains('mastered')) {
+            // 1. ESTADO DOMINADO
+            ctx.fillStyle = '#1a180b'; 
             ctx.fillRect(x, y, size, size);
             
-            // 2. Pintamos el sprite normal a todo color
             ctx.filter = 'none';
             ctx.drawImage(imgElement, x, y, size, size);
 
-            // 3. Borde verde neón de éxito
+            ctx.strokeStyle = '#ffd700';
+            ctx.lineWidth = 4;
+            ctx.strokeRect(x, y, size, size);
+
+            ctx.drawImage(crownElement, x + size - 30, y - 6, 36, 36);
+
+        } else if (card.classList.contains('captured')) {
+            // 2. ESTADO CAPTURADO NORMAL
+            ctx.fillStyle = '#1e1e1e';
+            ctx.fillRect(x, y, size, size);
+            
+            ctx.filter = 'none';
+            ctx.drawImage(imgElement, x, y, size, size);
+
             ctx.strokeStyle = '#00ffcc';
             ctx.lineWidth = 2;
             ctx.strokeRect(x, y, size, size);
+
         } else {
-            // 1. Fondo de la celda
+            // 3. ESTADO FALTANTE
             ctx.fillStyle = '#1e1e1e';
             ctx.fillRect(x, y, size, size);
 
-            // 2. Activamos el filtro gris en el Canvas y pintamos el sprite fantasma
             ctx.filter = 'grayscale(10%) opacity(50%)';
             ctx.drawImage(imgElement, x, y, size, size);
             
-            // 3. Reseteamos el filtro para no arruinar el siguiente dibujo
             ctx.filter = 'none';
-
-            // 4. Borde rojo de advertencia (faltante)
             ctx.strokeStyle = '#ff3333';
             ctx.lineWidth = 2;
             ctx.strokeRect(x, y, size, size);
         }
     });
-    
-    
 
-    // Marca de agua en el pie +QR
+    // Pie de página + QR
     ctx.fillStyle = '#aaaaaa';
     ctx.font = '24px "Segoe UI", sans-serif';
     ctx.textAlign = 'left';
@@ -356,7 +407,6 @@ btnShare.addEventListener('click', () => {
     ctx.font = 'bold 25px "Segoe UI", sans-serif';
     ctx.fillText('ichi9243.github.io/Fortnite-tracker/', 570, 1280);
 
-    // 2. Generamos el QR en la memoria usando la librería QRious
     const qr = new QRious({
         value: 'https://ichi9243.github.io/Fortnite-tracker/',
         size: 130,          
@@ -367,10 +417,8 @@ btnShare.addEventListener('click', () => {
 
     ctx.fillStyle = '#ffffff';
     ctx.fillRect(1060, 1170, 140, 140); 
-    
     ctx.drawImage(qr.canvas, 1065, 1175);
 
-    // Transformar a PNG real y mostrar en pantalla
     const dataUrl = canvas.toDataURL('image/png');
     sharePreview.src = dataUrl;
     btnDownload.href = dataUrl;
@@ -379,11 +427,10 @@ btnShare.addEventListener('click', () => {
     shareContainer.scrollIntoView({ behavior: 'smooth' });
 });
 
-
-
-// Ejecucion principal
+// ==========================================
+// EJECUCIÓN PRINCIPAL
+// ==========================================
 renderSpirits();
 loadProgress();
 setupClickEvents();
 updateProgress();
-
