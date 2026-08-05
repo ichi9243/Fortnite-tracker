@@ -151,7 +151,8 @@ const spiritsDatabase = [
     { id: 106, name: "Espíritu de cacahuate", img: "img/cacahuate.png" },
     { id: 107, name: "Espíritu de pollo", img: "img/pollo.png" },
     { id: 108, name: "Espíritu Vini Jr.", img: "img/vini-jr.png" },
-    { id: 109, name: "Espíritu John Wick", img: "img/john-wick.png" }
+    { id: 109, name: "Espíritu John Wick", img: "img/john-wick.png" },
+    { id: 110, name: "Espiritu de Ironmouse", img: "img/ironmouse.png" }
 ];
 
 
