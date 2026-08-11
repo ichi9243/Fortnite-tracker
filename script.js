@@ -70,7 +70,7 @@ const spiritsDatabase = [
     { id: 49, name: "Espíritu punk Galaxy", img: "img/punk-galaxy.png" },
     { id: 50, name: "Espíritu punk Gomita", img: "img/punk-gomita.png" },
     { id: 51, name: "Espíritu punk Cubo", img: "img/punk-cubo.png" },
-    { id: 52, name: "Espíritu punk Gema", img: "img/punk-gema.png" }, // <--- NUEVO
+    
 
     // 10. Espíritu monarca - rey
     { id: 53, name: "Espíritu monarca", img: "img/rey.png" },
