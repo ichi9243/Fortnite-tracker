@@ -37,7 +37,7 @@ const spiritsDatabase = [
     { id: 20, name: "Espíritu Jackrabbit Dorado", img: "img/jackrabbit-dorado.webp" },
     { id: 21, name: "Espíritu Jackrabbit Hacker", img: "img/jackrabbit-hacker.webp" },
 
-    // 8. Corona (El espíritu)
+    // 8. Corona
     { id: 22, name: "Espíritu Corona", img: "img/corona.webp" },
     { id: 23, name: "Espíritu Corona Dorado", img: "img/corona-dorado.webp" },
     { id: 24, name: "Espíritu Corona Hacker", img: "img/corona-hacker.webp" },
@@ -55,7 +55,12 @@ const spiritsDatabase = [
     // 11. 8bits
     { id: 31, name: "Espíritu 8bits", img: "img/8bits.webp" },
     { id: 32, name: "Espíritu 8bits Dorado", img: "img/8bits-dorado.webp" },
-    { id: 33, name: "Espíritu 8bits Hacker", img: "img/8bits-hacker.webp" }
+    { id: 33, name: "Espíritu 8bits Hacker", img: "img/8bits-hacker.webp" },
+
+    // 12. Tormenta (NUEVA FAMILIA)
+    { id: 34, name: "Espíritu Tormenta", img: "img/tormenta.webp" },
+    { id: 35, name: "Espíritu Tormenta Dorado", img: "img/tormenta-dorado.webp" },
+    { id: 36, name: "Espíritu Tormenta Hacker", img: "img/tormenta-hacker.webp" }
 ];
 
 
