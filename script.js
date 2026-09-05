@@ -57,11 +57,30 @@ const spiritsDatabase = [
     { id: 32, name: "Espíritu 8bits Dorado", img: "img/8bits-dorado.webp" },
     { id: 33, name: "Espíritu 8bits Hacker", img: "img/8bits-hacker.webp" },
 
-    // 12. Tormenta (NUEVA FAMILIA)
+    // 12. Tormenta
     { id: 34, name: "Espíritu Tormenta", img: "img/tormenta.webp" },
     { id: 35, name: "Espíritu Tormenta Dorado", img: "img/tormenta-dorado.webp" },
-    { id: 36, name: "Espíritu Tormenta Hacker", img: "img/tormenta-hacker.webp" }
+    { id: 36, name: "Espíritu Tormenta Hacker", img: "img/tormenta-hacker.webp" },
+
+    // 13. Onigiri (NUEVA)
+    { id: 37, name: "Espíritu Onigiri", img: "img/onigiri.webp" },
+    { id: 38, name: "Espíritu Onigiri Dorado", img: "img/onigiri-dorado.webp" },
+    { id: 39, name: "Espíritu Onigiri Hacker", img: "img/onigiri-hacker.webp" },
+
+    // 14. Overshield (NUEVA)
+    { id: 40, name: "Espíritu Overshield", img: "img/overshield.webp" },
+    { id: 41, name: "Espíritu Overshield Dorado", img: "img/overshield-dorado.webp" },
+    { id: 42, name: "Espíritu Overshield Hacker", img: "img/overshield-hacker.webp" },
+
+    // 15. X-Ray (NUEVA)
+    { id: 43, name: "Espíritu X-Ray", img: "img/x-ray.webp" },
+    { id: 44, name: "Espíritu X-Ray Dorado", img: "img/x-ray-dorado.webp" },
+    { id: 45, name: "Espíritu X-Ray Hacker", img: "img/x-ray-hacker.webp" },
+
+    // 16. Solitarios / Colabs (NUEVO)
+    { id: 46, name: "Espíritu Mega Man", img: "img/mega-man.webp" }
 ];
+
 
 
 // ==========================================
@@ -240,7 +259,7 @@ btnShare.addEventListener('click', () => {
     const ctx = canvas.getContext('2d');
     
     canvas.width = 1300;
-    canvas.height = 900;
+    canvas.height = 1010;
     
     const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
     gradient.addColorStop(0, '#3a3a3a');
@@ -331,12 +350,12 @@ btnShare.addEventListener('click', () => {
     ctx.fillStyle = '#aaaaaa';
     ctx.font = '24px "Segoe UI", sans-serif';
     ctx.textAlign = 'left';
-    ctx.fillText('📱 Escanea el código para crear tu', 560, 760);
-    ctx.fillText('propia checklist interactiva:', 570, 790);
+    ctx.fillText('📱 Escanea el código para crear tu', 560, 870);
+    ctx.fillText('propia checklist interactiva:', 570, 900);
     
     ctx.fillStyle = '#00ffcc';
     ctx.font = 'bold 25px "Segoe UI", sans-serif';
-    ctx.fillText('ichi9243.github.io/Fortnite-tracker/', 570, 830);
+    ctx.fillText('ichi9243.github.io/Fortnite-tracker/', 570, 940);
 
     const qr = new QRious({
         value: 'https://ichi9243.github.io/Fortnite-tracker/',
@@ -347,8 +366,8 @@ btnShare.addEventListener('click', () => {
     });
 
     ctx.fillStyle = '#ffffff';
-    ctx.fillRect(1060, 720, 140, 140); 
-    ctx.drawImage(qr.canvas, 1065, 725);
+    ctx.fillRect(1060, 830, 140, 140); 
+    ctx.drawImage(qr.canvas, 1065, 835);
 
     const dataUrl = canvas.toDataURL('image/png');
     sharePreview.src = dataUrl;
